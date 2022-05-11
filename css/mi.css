@@ -33,8 +33,10 @@ body {
 }
 .header__item--anchor:hover {
 	background:#d00000;
-	border-radius: 20px;
+    border-bottom: 1px solid;
+	border-radius: 22px;
 }
+
 .header__item{
     position: relative; 
     margin: 0px 10px; 
@@ -160,25 +162,33 @@ body {
 }
 .main__contenedor--links{
     text-align: left;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 .div__ubicacion{
     width: 400px; 
     height:250px; 
     border:0;
 }
+.ul__contact{
+    background-color: #a01a1a;
+    width: 350px;
+}
+
 .ul__contact, .ul__links--anchor{
     list-style: none;
     text-decoration: none;
     font-size: 20px;
-    color:#050102;
-    font:bold;
+    color:#ffffff;
     
 }
 .ul__links--imagen{
     width: 30px;
     height: 30px;
     margin-right: 12px;
+}
+.iframe__ubicacion{
+    height: 250px;
+    width: 650px;
 }
 
 /*FIN IMG y texto SMI inicio */
