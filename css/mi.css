@@ -37,13 +37,11 @@ body {
 }
 .header__item{
     position: relative; 
-    display: inline-block; 
     margin: 0px 10px; 
     float: right;
 }
 .nav__logo{
-    padding:0px;
-    display: inline-block; 
+    padding:1px;
 
 }
 .nav__titulo{
@@ -108,8 +106,7 @@ body {
 /*servicios*/
 .imagen__servicio{
     height: 350px ;
-    width: 550px;
-    
+    width: 550px;    
     padding:10px 0 50px 0;
 }
 /* Productos*/
@@ -131,7 +128,21 @@ body {
 }
 
 /* Galeria*/
-
+.main__titulo--comentario{
+    text-align: center;
+    font-size: 20px;
+    color: #200505;
+    margin-bottom: 80px;
+}
+.main__article{
+   margin-top: 30px;
+}
+.imagen__servicio--galeria{
+    padding-bottom: 0px;
+    width: 350px;
+    height: 250px;
+    
+}
 /* contacto*/
 /*FIN IMG y texto SMI inicio */
 /*Article******* */
