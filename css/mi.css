@@ -1,0 +1,159 @@
+/* CSS RESET******************************** */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+/* CSS BODY******************************** */
+body {
+    background-color:rgb(226, 215, 215);
+    
+}
+/* CSS HEADER***************************** */
+.header {
+    height: 130px;
+    width: 100%; 
+	background-color: #000000c4;
+    position: fixed;
+}
+
+.header__list{
+    list-style: none; 
+   
+}
+.header__item--anchor{
+    list-style:none;
+	color: #f4f4f8;
+	text-decoration:none;
+	padding: 2px 1px;
+	font-size:20px;
+	font-weight:bold;
+    
+}
+.header__item--anchor:hover {
+	background:#d00000;
+	border-radius: 20px;
+}
+.header__item{
+    position: relative; 
+    display: inline-block; 
+    margin: 0px 10px; 
+    float: right;
+}
+.nav__logo{
+    padding:0px;
+    display: inline-block; 
+
+}
+.nav__titulo{
+    font-size: 45px;
+    line-height: 40px;
+    display: inline-block;
+    color:#d3161cee;  
+    text-shadow: 0 3px 0 rgba(235, 226, 226, 0.945);
+    padding-left: 50px;
+}
+/* CSS MAIN******************************* */
+.main {
+    padding-top:12%;
+    
+}
+.main__section, .main__section--empresa{
+    text-align: center;
+}
+
+/* IMG y texto SMI inicio*/
+.main__section--empresa{
+    width: 60%;
+    background: #be0b11;
+    border-radius: 35px 0px 35px 0px;
+    border: 2px solid #0d0d0e;
+    margin:0 22%;
+}
+.main__titulo{
+    text-align: center;
+    font-size: 50px;
+    color: #200505;
+    text-decoration: underline overline #050102;
+        
+}
+.main__titulo--h2{
+    color: #d00000;
+}
+.main__contenedor--der{
+    text-align: center;
+    padding-bottom: 50px;   
+
+}
+.main__imagen{
+    padding-top: 15px;
+    width: 350px;
+    height: 250px;
+}
+.main__contenedor--izq{
+   text-align: justify;
+   padding:10px
+   
+             
+}
+.main__parrafo{
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff; 
+    letter-spacing:2px;  
+    font-weight:500; 
+
+}
+/*imagenes de servicios*/
+.imagen__servicio{
+    height: 350px ;
+    width: 550px;
+    
+    padding:10px 0 50px 0;
+}
+/*FIN IMG y texto SMI inicio */
+/*Article******* */
+.article{
+    padding-top: 15px;
+}
+.main__iframe{
+    padding-top: 5px;
+    width: 750px;
+    height: 450px;
+}
+.main__titulo--h2{
+    font-size: 35px;
+
+}
+
+/* Css FOOTER********************** */
+.footer{
+    margin-top: 5%;
+    display: inline-block;
+    background-color: black;
+    height: 100px;
+    width: 100%; 
+}
+.footer__logo{
+    float: left;
+    padding-top: 20px;
+}
+.footer__div{
+    position: relative;
+    left: 28%;
+    top:25%;    
+}
+.footer__anchor{
+    padding: 0px 15px;
+}
+.footer__copyrigth{
+    color: #f4f4f8;
+    position: relative;
+    top: 25%;
+    left: 26%;
+}
+.footer__anchor--imagen{
+    height: 40px;
+	width: 35px
+}
