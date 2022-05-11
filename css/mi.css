@@ -39,6 +39,7 @@ body {
     position: relative; 
     margin: 0px 10px; 
     float: right;
+    list-style: none;
 }
 .nav__logo{
     padding:1px;
@@ -74,6 +75,7 @@ body {
     font-size: 50px;
     color: #200505;
     text-decoration: underline overline #050102;
+    padding: 30px 0 20px 0;
         
 }
 .main__titulo--h2{
@@ -144,6 +146,41 @@ body {
     
 }
 /* contacto*/
+.div__form{
+    width: 650px;
+    text-align: left;
+    padding: 50px;
+    
+}
+.form__fieldset{
+    padding:5px 0 2px 10px;
+}
+.form__fieldset--botom{
+    margin: 2px 0 15px 15px;
+}
+.main__contenedor--links{
+    text-align: left;
+    margin-left: 10%;
+}
+.div__ubicacion{
+    width: 400px; 
+    height:250px; 
+    border:0;
+}
+.ul__contact, .ul__links--anchor{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color:#050102;
+    font:bold;
+    
+}
+.ul__links--imagen{
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
 /*FIN IMG y texto SMI inicio */
 /*Article******* */
 .article{
