@@ -105,13 +105,34 @@ body {
     font-weight:500; 
 
 }
-/*imagenes de servicios*/
+/*servicios*/
 .imagen__servicio{
     height: 350px ;
     width: 550px;
     
     padding:10px 0 50px 0;
 }
+/* Productos*/
+.main__tabla{
+    border: 2px solid #050102;
+    margin: 0 auto; 
+    margin-top: 20px;
+    
+}
+.tabla__encabezado{
+    border: 3px solid #050102;
+}
+.tabla__contenido{
+    border: 1px solid #050102;
+    padding: 3px;
+}
+.main__contenedor--productos{
+    text-align: center;
+}
+
+/* Galeria*/
+
+/* contacto*/
 /*FIN IMG y texto SMI inicio */
 /*Article******* */
 .article{
