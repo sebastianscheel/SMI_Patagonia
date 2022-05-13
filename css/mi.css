@@ -1,7 +1,6 @@
 /* CSS RESET******************************** */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
     box-sizing: border-box;
     font-family:'poppins', sans-serif;
 }
@@ -12,52 +11,70 @@ body {
 }
 /* CSS HEADER***************************** */
 .header {
-    height: 130px;
+    height: 120px;
     width: 100%; 
-	background-color: #000000c4;
-    position: fixed;
+	background-color: #000000e0; 
+     
 }
-
+.header__nav{
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+    
+}
 .header__list{
     list-style: none; 
+    display: flex;
    
+}
+
+/* DIV contenedor imagen y nombre de empresa*/
+.contenedor__logo{
+    display: flex;
+    align-items: center;
+    
+}
+.contenerdor__list{
+    display: flex;
+    align-items:flex-end;
+    padding-left: 0ex;
+}
+.imagen__logo{
+    width: 150px;
+    height: 60px;
+}
+.nav__titulo{
+    text-align:center;
+    font-size: 45px; 
+    padding-left: 2%;
+    color:#9D0208; 
+	text-shadow: 0 3px 0 rgb(235, 222, 222);
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.header__item{
+    list-style: none;
+    padding: 10px;
 }
 .header__item--anchor{
     list-style:none;
 	color: #f4f4f8;
 	text-decoration:none;
-	padding: 2px 1px;
 	font-size:20px;
 	font-weight:bold;
     
 }
 .header__item--anchor:hover {
 	background:#d00000;
-    border-bottom: 1px solid;
-	border-radius: 22px;
+    border-radius: 8px;
 }
 
-.header__item{
-    position: relative; 
-    margin: 0px 10px; 
-    float: right;
-    list-style: none;
-}
-.nav__logo{
-    padding:1px;
 
-}
-.nav__titulo{
-    font-size: 45px;
-    line-height: 40px;
-    display: inline-block;
-    color:#d3161cee;  
-    text-shadow: 0 3px 0 rgba(235, 226, 226, 0.945);
-    padding-left: 50px;
-}
 /* CSS MAIN******************************* */
 .main {
-    padding-top:12%;
+    padding-top:5%;
     
 }
 .main__section, .main__section--empresa{
@@ -181,6 +198,11 @@ body {
     color:#ffffff;
     
 }
+.ul__links--anchor:hover{
+    background:#694848f8;
+    border-radius: 5px;
+	
+}
 .ul__links--imagen{
     width: 30px;
     height: 30px;
@@ -235,4 +257,9 @@ body {
 .footer__anchor--imagen{
     height: 40px;
 	width: 35px
+}
+/* *******************MEDIA QUERIES******************* */
+
+@media screen and (max-width: 320px){
+     
 }
