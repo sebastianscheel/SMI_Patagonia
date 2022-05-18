@@ -50,6 +50,7 @@ body {
 	text-shadow: 0 1px 0 rgb(255, 255, 255);
     letter-spacing: 1px;
     line-height: 40px;
+    padding-left: 15px;
 }
 .header__item{
     list-style: none;
@@ -247,6 +248,7 @@ body {
      display: flex;
      flex-direction: column; 
      align-items: center;
+     padding-left: 15px;
 }
 .footer__div--anchor{
     padding-top: 5px;
