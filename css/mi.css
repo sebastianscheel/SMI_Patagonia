@@ -4,81 +4,76 @@
     box-sizing: border-box;
     font-family:'poppins', sans-serif;
 }
+html{
+    height: 100%;
+}
 /* CSS BODY******************************** */
 body {
     background-color:rgb(240, 231, 231);
+    display: grid;
+    min-height: 100%;
+    grid-template:
+    "header header header" 90px
+    "main main main" auto
+    "footer footer footer" 80px / auto;
+    gap:10px;
     
 }
 /* CSS HEADER***************************** */
 .header {
-    height: 100px;
-    width: 100%; 
-	
+    grid-area: header;
     position: fixed;
-     
-}
-.header__nav{
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    padding: 0 1% 0 1%;
-    
+    background-color: black;
+    width: 100%;        
 }
 .header__list{
-    list-style: none; 
     display: flex;
-   
+    width: 100%;
+    justify-content: center;
 }
-
-/* DIV contenedor imagen y nombre de empresa*/
+.header__nav{
+    grid-area: nav; 
+    background-color: #a01a1a; 
+}
 .contenedor__logo{
-    display: flex;
-    align-items: center;
-    background-color: #201e1ed5; 
-    
-}
-.contenerdor__list{
-    display: flex;
-    align-items:flex-end;
-    padding-left: 0px;
-    background-color: #201e1ed5; 
+    display: flex; 
+    justify-content: space-evenly;    
 }
 .imagen__logo{
-    width: 150px;
-    height: 60px;
+    width: 75px;
+    height: 45px;
 }
 .nav__titulo{
-    text-align:center;
-    font-size: 55px; 
+    font-size: 1.5rem; 
     font-family: 'Times New Roman', Times, serif;
-    padding-left: 2%;
-    color:#ffffff; 
-	text-shadow: 0 3px 0 rgb(243, 5, 5);
+    color:#e85d04;
+	text-shadow: 0 1px 0 rgb(255, 255, 255);
     letter-spacing: 1px;
     line-height: 40px;
 }
-
 .header__item{
     list-style: none;
-    padding: 10px;
+    padding: 5px;
+         
 }
 .header__item--anchor{
     list-style:none;
 	color: #f4f4f8;
 	text-decoration:none;
-	font-size:20px;
-	font-weight:bold;
-    
+	font-size:15px;
+	font-weight:bold;    
 }
 .header__item--anchor:hover {
 	background:#d00000;
     border-radius: 8px;
 }
-
+.header__item--anchor:focus {
+	background:#085008;
+}
 
 /* CSS MAIN******************************* */
 .main {
-    padding-top:10%;
+    grid-area: main;
     
 }
 .main__section, .main__section--empresa{
@@ -88,7 +83,7 @@ body {
 /* IMG y texto SMI inicio*/
 .main__section--empresa{
     width: 60%;
-    background: #be0b11;
+    background: #ca0a0ad8;
     border-radius: 35px 0px 35px 0px;
     border: 2px solid #0d0d0e;
     margin:0 22%;
@@ -224,8 +219,8 @@ body {
 }
 .main__iframe{
     padding-top: 5px;
-    width: 750px;
-    height: 450px;
+    width: 550px;
+    height: 250px;
 }
 .main__titulo--h2{
     font-size: 35px;
@@ -234,29 +229,34 @@ body {
 
 /* Css FOOTER********************** */
 .footer{
-    margin-top: 5%;
-    display: inline-block;
+    grid-area: footer;
     background-color: black;
-    height: 100px;
     width: 100%; 
+    display: flex;
 }
 .footer__logo{
-    float: left;
-    padding-top: 20px;
+   height: 50px;
+   width: 62px;}
+
+.footer__div--logo{   
+   display: flex;
+   align-items: center;
+   padding: 15px;
 }
 .footer__div{
-    position: relative;
-    left: 28%;
-    top:25%;    
+    
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.footer__div--anchor{
+    padding-top: 5px;
 }
 .footer__anchor{
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 .footer__copyrigth{
     color: #f4f4f8;
-    position: relative;
-    top: 25%;
-    left: 26%;
 }
 .footer__anchor--imagen{
     height: 40px;
@@ -264,16 +264,14 @@ body {
 }
 /* *******************MEDIA QUERIES******************* */
 
-@media screen and (max-width: 720px){
+/*@media screen and (max-width: 720px){
     .header__nav{
        flex-direction: column;            
     }
     .nav__titulo{
         text-align:center;
-        font-size: 20px;
-    }
-    .header__nav{
-    
-    }
+        font-size: 0px;
+    }    
+
       
-}
+}*/
