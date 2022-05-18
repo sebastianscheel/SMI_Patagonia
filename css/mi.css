@@ -244,9 +244,8 @@ body {
    padding: 15px;
 }
 .footer__div{
-    
      display: flex;
-     flex-direction: column;
+     flex-direction: column; 
      align-items: center;
 }
 .footer__div--anchor{
