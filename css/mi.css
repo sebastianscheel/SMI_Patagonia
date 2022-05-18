@@ -13,10 +13,9 @@ body {
     display: grid;
     min-height: 100%;
     grid-template:
-    "header header header" 90px
+    "header header header" 80px
     "main main main" auto
-    "footer footer footer" 80px / auto;
-    gap:10px;
+    "footer footer footer" 70px / auto;
     
 }
 /* CSS HEADER***************************** */
@@ -30,6 +29,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: 0 5px;
 }
 .header__nav{
     grid-area: nav; 
@@ -37,24 +37,27 @@ body {
 }
 .contenedor__logo{
     display: flex; 
-    justify-content: space-evenly;    
+    justify-content: space-evenly; 
+    align-items: center;   
 }
 .imagen__logo{
     width: 75px;
     height: 45px;
 }
 .nav__titulo{
-    font-size: 1.5rem; 
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
     color:#e85d04;
 	text-shadow: 0 1px 0 rgb(255, 255, 255);
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 16px;
     padding-left: 15px;
+    text-align: centre;
+    padding-top: 3px;
 }
+
 .header__item{
     list-style: none;
-    padding: 5px;
+    padding: 3px;
          
 }
 .header__item--anchor{
@@ -250,6 +253,7 @@ body {
 }
 .footer__copyrigth{
     color: #f4f4f8;
+    font-size: 0.5rem;
 }
 .footer__anchor--imagen{
     height: 40px;
