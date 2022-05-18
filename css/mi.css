@@ -75,7 +75,9 @@ body {
 /* CSS MAIN******************************* */
 .main {
     grid-area: main;
-    
+    display: flex;
+    flex-direction: column;
+    align-items:  center;    
 }
 .main__section, .main__section--empresa{
     text-align: center;
@@ -83,48 +85,48 @@ body {
 
 /* IMG y texto SMI inicio*/
 .main__section--empresa{
-    width: 60%;
+    width: 95%;
+    margin-top: 8%;
     background: #ca0a0ad8;
     border-radius: 35px 0px 35px 0px;
     border: 2px solid #0d0d0e;
-    margin:0 22%;
 }
 .main__titulo{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: #200505;
     text-decoration: underline overline #050102;
-    padding: 30px 0 20px 0;
+    padding: 10px 0;
         
 }
 .main__titulo--h2{
     color: #d00000;
 }
-.main__contenedor--der{
-    text-align: center;
-    padding-bottom: 50px;   
-
-}
 .main__imagen{
     padding-top: 15px;
-    width: 350px;
-    height: 250px;
-}
-.main__contenedor--izq{
-   text-align: justify;
-   padding:10px
-   
-             
+    width: 250px;
+    height: 150px;
 }
 .main__parrafo{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff; 
-    letter-spacing:2px;  
-    font-weight:500; 
+}
+.main__iframe{
+    height: 150;
+    width: 150;
+}
+/*FIN IMG y texto SMI inicio */
+/*Article******* */
+.article{
+    padding-top: 15px;
+}
+
+.main__titulo--h2{
+    font-size: 35px;
 
 }
-/*servicios*/
+/*servicios************************ */
 .imagen__servicio{
     height: 350px ;
     width: 550px;    
@@ -213,20 +215,7 @@ body {
     width: 650px;
 }
 
-/*FIN IMG y texto SMI inicio */
-/*Article******* */
-.article{
-    padding-top: 15px;
-}
-.main__iframe{
-    padding-top: 5px;
-    width: 550px;
-    height: 250px;
-}
-.main__titulo--h2{
-    font-size: 35px;
 
-}
 
 /* Css FOOTER********************** */
 .footer{
@@ -234,21 +223,24 @@ body {
     background-color: black;
     width: 100%; 
     display: flex;
+    justify-content: space-evenly;    
 }
+
 .footer__logo{
-   height: 50px;
-   width: 62px;}
+   height: 60px;
+   width: 70px;
+}
 
 .footer__div--logo{   
    display: flex;
    align-items: center;
-   padding: 15px;
+  
 }
 .footer__div{
      display: flex;
      flex-direction: column; 
      align-items: center;
-     padding-left: 15px;
+     
 }
 .footer__div--anchor{
     padding-top: 5px;
