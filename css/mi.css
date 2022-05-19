@@ -72,7 +72,8 @@ body {
     border-radius: 8px;
 }
 .header__item--anchor:focus {
-	background:#085008;
+	background:#e03004;
+    border-radius: 5px;
 }
 
 /* CSS MAIN******************************* */
@@ -230,8 +231,8 @@ body {
 }
 
 .footer__logo{
-   height: 60px;
-   width: 70px;
+    width: 75px;
+    height: 45px;
 }
 
 .footer__div--logo{   
