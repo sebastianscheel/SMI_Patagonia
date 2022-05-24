@@ -194,9 +194,11 @@ body {
     margin-top: 10%;
     align-items: center;
 }
-.main__titulo{
+
+.main__titulo {
     font-size: 1.3rem;
 }
+
 .div__form {
     height: 50%;
     width: 50%;
@@ -239,6 +241,7 @@ body {
     height: 30vh;
     width: 50vw;
     padding: 2% 0;
+    align-items: center;
 }
 
 /* Css FOOTER********************** */
