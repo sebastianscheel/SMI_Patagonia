@@ -194,10 +194,12 @@ body {
     margin-top: 10%;
     align-items: center;
 }
-
+.main__titulo{
+    font-size: 1.3rem;
+}
 .div__form {
-    height: 55vh;
-    width: 45vw;
+    height: 50%;
+    width: 50%;
 
 }
 
@@ -236,6 +238,7 @@ body {
 .div__ubicacion {
     height: 30vh;
     width: 50vw;
+    padding: 2% 0;
 }
 
 /* Css FOOTER********************** */
