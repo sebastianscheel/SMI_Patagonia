@@ -1,100 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/mi.css" />
-    <title>SMI Patagonia</title>
-  </head>
-  <body>
-    <header class="header">
-      <!-- La cabecera de Logo y Nombre-->
-      <div class="contenedor__logo">
-        <img class="imagen__logo" src="../img/logos/SMI_72DPI letras blancas.png" alt="pie de pagina"/>
-        <h1 class="nav__titulo">Servicios de <span class="nav__span">Mantenimiento Integral</span> </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/mi.css" />
+  <title>SMI Patagonia</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- La cabecera de Logo y Nombre-->
+    <div class="contenedor__logo">
+      <img class="imagen__logo" src="../img/logos/SMI_72DPI letras blancas.png" alt="pie de pagina" />
+      <h1 class="nav__titulo">Servicios de <span class="nav__span">Mantenimiento Integral</span> </h1>
+    </div>
+    <nav class="header__nav">
+      <!--Esta son los links de navegación-->
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__item--anchor" href="../index.html " target="_blanck">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item--anchor" href="../vistas/servicios.html" target="_blanck">Servicios</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item--anchor" href="../vistas/productos.html" target="_blanck">Productos</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item--anchor" href="../vistas/galeria.html" target="_blanck">Galeria</a>
+        </li>
+        <li class="header__item">
+          <a class="header__item--anchor" href="../vistas/contacto.html" target="_blanck">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Cuerpo-->
+  <main class="main">
+    <section class="main__section--contacto">
+      <div class="main__contenedor--form">
+        <h1 class="main__titulo">Dejanos tu mensaje:</h1>
+        <!-- Formulario  -->
+        <form class="div__form" action="mi_servidorIP" autocomplete="off" target="_blank" method="post">
+          <fieldset class="form__fieldset">
+            <legend>Consultas:</legend>
+
+            <label for="nombre"> Nombre: </label><br />
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true" /> <br />
+
+            <label for="apellido"> Apellido: </label><br />
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true" /><br />
+
+            <label for="email"> Email:</label> <br />
+            <input type="email" name="email" id="email" placeholder="Escribe tu Correo @" required="true"> <br><br>
+
+            <p>Mensaje: </p>
+            <textarea rows="10" cols="30" name="comentario" placeholder="Escribe tu mensaje"
+              required="true"></textarea><br>
+
+            <input class="form__fieldset--botom" type="submit" value="Enviar" />
+            <input class="form__fieldset--botom" type="reset" value="Restablecer">
+          </fieldset>
       </div>
-      <nav class="header__nav">
-        <!--Esta son los links de navegación-->
-        <ul class="header__list">
-          <li class="header__item"><a class="header__item--anchor" href="../index.html " target="_blanck">Home</a></li>
-          <li class="header__item">
-            <a class="header__item--anchor" href="./vistas/servicios.html" target="_blanck">Servicios</a></li>
-          <li class="header__item"><a class="header__item--anchor" href="../vistas/productos.html" target="_blanck">Productos</a></li>
-          <li class="header__item"><a class="header__item--anchor" href="../vistas/galeria.html" target="_blanck">Galeria</a></li>
-          <li class="header__item"><a class="header__item--anchor" href="../vistas/contacto.html" target="_blanck">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Cuerpo-->
-    <main class="main">
-        <section class="main__section">                                
-            <div class="main__contenedor--form">
-                <h1 class="main__titulo">Dejanos tu mensaje:</h1>
-                <!-- Formulario  -->
-                <form class="div__form" action="mi_servidorIP" autocomplete="off" target="_blank" method="post">
-                    <fieldset class="form__fieldset"> 
-                        <legend>Consultas:</legend>
+      <h1 class="main__titulo">Podes visitarnos en:</h1>
+      <div class="main__contenedor--links">
+        <!-- links de contacto-->
 
-                        <label for="nombre"> Nombre: </label><br/> 
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/> <br/>
-                        
-                        <label for="apellido"> Apellido: </label><br/>
-                        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"/><br/>
-
-                        <label for="email"> Email:</label> <br/>
-                        <input type="email" name="email" id="email" placeholder="Escribe tu Correo @" required="true"> <br><br>
-
-                        <p>Mensaje: </p>
-                        <textarea rows="10" cols="30" name="comentario" placeholder="Escribe tu mensaje" required="true"></textarea><br>
-
-                        <input class="form__fieldset--botom" type="submit" value="Enviar" />
-                        <input class="form__fieldset--botom" type="reset" value="Restablecer">
-                    </fieldset>
-            </div>  
-            <h1 class="main__titulo">Podes visitarnos en:</h1> 
-            <div class="main__contenedor--links">
-            <!-- links de contacto-->
-                          
-                <ul class="ul__links">
-                    <li class="ul__contact"><a class="ul__links--anchor" href="https://www.facebook.com/smipatagonia/?ref=page_internal"><img class="ul__links--imagen" src="../img/Iconos/iconos2/facebook.png" >Facebook SMI Patagonia</a></li><br>
-                    <li class="ul__contact"><a class="ul__links--anchor" href="https://www.instagram.com/smi_patagonia/?hl=es"><img class="ul__links--imagen" src="../img/Iconos/iconos2/instagram.png" >Instagram SMI Patagonia</a></li><br>                    
-                    <li class="ul__contact"><a class="ul__links--anchor" href="https://api.whatsapp.com/send?phone=5492944644893&app=facebook&entry_point=page_cta&fbclid=IwAR0YfoArijAVD-SaIu1O7t3G7aAtteFJCbAxjhVMStmrmy-KXEajCW2l7RE"><img class="ul__links--imagen" src="../img/Iconos/iconos2/whatsapp.png" >Whatsapp Ventas</a></li><br> 
-                    <li class="ul__contact"><a class="ul__links--anchor" href="mailito:smi@gmail.com?"><img class="ul__links--imagen"  src="../img/Iconos/iconos2/correo.png" >Correo electronico</a></li><br>
-                    <li class="ul__contact"><img class="ul__links--imagen" src="../img/Iconos/iconos2/call.png" >TEL: +54 (294) 15-4644893</li><br>
-                    <li class="ul__contact"><img class="ul__links--imagen" src="../img/Iconos/iconos2/ubicación.png" >Ubicacion: Calle Garibaldi 145, C.P. 8400, San Carlos de Bariloche, Río Negro Argentina</li><br>
-                     <div class="div__ubicacion"><iframe class="iframe__ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.040946954638!2d-71.28356608508166!3d-41.13363207928828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7c9b87bd0269%3A0xd751f378368c984a!2sGaribaldi%20145%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1651288718021!5m2!1ses-419!2sar"></iframe>
-                        </div>                   
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <!--Esto es un pie de página-->
-      <div class="footer__div--logo">
-          <img class="footer__logo" src="../img/logos/logoSMI.png" alt="pie de pagina" />
-      </div>
-      <div class="footer__div">
-         <div class="footer__div--anchor">
-              <a class="footer__anchor" href="https://api.whatsapp.com/send?phone=5492944644893&app=facebook entry_point=page_cta&fbclid=IwAR0YfoArijAVD-SaIu1O7t3G7aAtteFJCbAxjhVMStmrmy-KXEajCW2l7RE" title="whatsapp">
-                <img class="footer__anchor--imagen" src="../img/Iconos/whatsapp.png" alt="whatsapp"/></a>
-              <a class="footer__anchor" href="https://www.instagram.com/smi_patagonia/?hl=es" title="instagram">
-                <img class="footer__anchor--imagen" src="../img/Iconos/instagram.png" alt="instagram"/></a>
-              <a class="footer__anchor" href="https://www.facebook.com/smipatagonia/?ref=page_internal" title="facebook">
-                <img class="footer__anchor--imagen" src="../img/Iconos/facebook.png" alt="facebook"/></a>
-              <a class="footer__anchor" href="mailito:smi@gmail.com? Subjet=Consulta desde la WEB" title="correo">
-                <img class="footer__anchor--imagen" src="../img/Iconos/email.png" alt="email"/></a>
+        <ul class="ul__links">
+          <li class="ul__contact"><a class="ul__links--anchor"
+              href="https://www.facebook.com/smipatagonia/?ref=page_internal"><img class="ul__links--imagen"
+                src="../img/Iconos/iconos2/facebook.png">Facebook SMI Patagonia</a></li><br>
+          <li class="ul__contact"><a class="ul__links--anchor"
+              href="https://www.instagram.com/smi_patagonia/?hl=es"><img class="ul__links--imagen"
+                src="../img/Iconos/iconos2/instagram.png">Instagram SMI Patagonia</a></li><br>
+          <li class="ul__contact"><a class="ul__links--anchor"
+              href="https://api.whatsapp.com/send?phone=5492944644893&app=facebook&entry_point=page_cta&fbclid=IwAR0YfoArijAVD-SaIu1O7t3G7aAtteFJCbAxjhVMStmrmy-KXEajCW2l7RE"><img
+                class="ul__links--imagen" src="../img/Iconos/iconos2/whatsapp.png">Whatsapp Ventas</a></li><br>
+          <li class="ul__contact"><a class="ul__links--anchor" href="mailito:smi@gmail.com?"><img
+                class="ul__links--imagen" src="../img/Iconos/iconos2/correo.png">Correo electronico</a></li><br>
+          <li class="ul__contact"><img class="ul__links--imagen" src="../img/Iconos/iconos2/call.png">TEL: +54 (294)
+            15-4644893</li><br>
+          <li class="ul__contact"><img class="ul__links--imagen" src="../img/Iconos/iconos2/ubicación.png">Ubicacion:
+            Calle Garibaldi 145, C.P. 8400, San Carlos de Bariloche, Río Negro Argentina</li><br>
+          <div class="div__ubicacion"><iframe class="iframe__ubicacion"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.040946954638!2d-71.28356608508166!3d-41.13363207928828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7c9b87bd0269%3A0xd751f378368c984a!2sGaribaldi%20145%2C%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1651288718021!5m2!1ses-419!2sar"></iframe>
           </div>
-          <p class="footer__copyrigth">
-          Copyright &copy; 2022 All Rights Reserved bySebit&copy;
-          </p>
+        </ul>
       </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <!--Esto es un pie de página-->
+    <div class="footer__div--logo">
+      <img class="footer__logo" src="../img/logos/logoSMI.png" alt="pie de pagina" />
+    </div>
+    <div class="footer__div">
+      <div class="footer__div--anchor">
+        <a class="footer__anchor"
+          href="https://api.whatsapp.com/send?phone=5492944644893&app=facebook entry_point=page_cta&fbclid=IwAR0YfoArijAVD-SaIu1O7t3G7aAtteFJCbAxjhVMStmrmy-KXEajCW2l7RE"
+          title="whatsapp">
+          <img class="footer__anchor--imagen" src="../img/Iconos/whatsapp.png" alt="whatsapp" /></a>
+        <a class="footer__anchor" href="https://www.instagram.com/smi_patagonia/?hl=es" title="instagram">
+          <img class="footer__anchor--imagen" src="../img/Iconos/instagram.png" alt="instagram" /></a>
+        <a class="footer__anchor" href="https://www.facebook.com/smipatagonia/?ref=page_internal" title="facebook">
+          <img class="footer__anchor--imagen" src="../img/Iconos/facebook.png" alt="facebook" /></a>
+        <a class="footer__anchor" href="mailito:smi@gmail.com? Subjet=Consulta desde la WEB" title="correo">
+          <img class="footer__anchor--imagen" src="../img/Iconos/email.png" alt="email" /></a>
+      </div>
+      <p class="footer__copyrigth">
+        Copyright &copy; 2022 All Rights Reserved bySebit&copy;
+      </p>
+    </div>
   </footer>
 </body>
+
 </html>
