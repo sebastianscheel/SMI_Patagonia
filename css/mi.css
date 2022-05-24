@@ -232,8 +232,8 @@ body {
 }
 
 .footer__logo {
-    width: 45px;
-    height: 50px;
+    width: 20vw;
+    height: 7vh;
 }
 
 .footer__div--logo {
@@ -257,12 +257,12 @@ body {
 
 .footer__copyrigth {
     color: #f4f4f8;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .footer__anchor--imagen {
-    height: 4vh;
-    width: 2vw;
+    height: 7vh;
+    width: 7vw;
 }
 
 /* *******************MEDIA QUERIES******************* */
