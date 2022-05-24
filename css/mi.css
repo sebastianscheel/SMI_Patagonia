@@ -13,7 +13,6 @@ html {
 body {
     background-color: rgb(240, 231, 231);
     display: grid;
-    min-height: 100%;
     grid-template:
         "header header header" 80px
         "main main main" auto
@@ -44,29 +43,21 @@ body {
 .contenedor__logo {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .imagen__logo {
     width: 75px;
     height: 45px;
+    
 }
 
 .nav__titulo {
-    font-size: 1.2rem;
-    color: #e85d04;
-    text-shadow: 0 1px 0 rgb(255, 255, 255);
-    letter-spacing: 1px;
-    line-height: 16px;
-    padding-left: 15px;
-    text-align: centre;
-    padding-top: 3px;
+    display: none;
 }
 
 .header__item {
     list-style: none;
     padding: 3px;
-
 }
 
 .header__item--anchor {
@@ -286,12 +277,34 @@ body {
 }
 
 /* *******************MEDIA QUERIES******************* */
+/* Tablet hasta 480px*/
+@media screen and (min-width: 500px) {
+    .nav__titulo {
+        font-size: 1.3rem;
+        color: #e85d04;
+        text-shadow: 0 1px 0 rgb(255, 255, 255);
+        letter-spacing: 1px;
+        line-height: 16px;
+        display:contents ;
+    }
+    .header__nav {
+        grid-area: nav;
+        background-color: #a01a1a;
+    }
+    .contenedor__logo{
+        align-items: center;
+    }
+    .header__item--anchor {
+        font-size: 1.3rem;
+    }
+}
 
+/* Desktop a partir de 768*/
 @media screen and (min-width: 768px) {
 
     /* header*/
     .header {
-        height: 15vh;
+        height: 18vh;
         background-color: #0d0d0ef1;
     }
 
@@ -300,35 +313,32 @@ body {
         padding-right: 3%;
 
     }
-
+    
     .contenedor__logo {
-        height: 60%;
-        justify-content: space-between
+       justify-content:flex-start;
     }
 
     .header__nav {
-        height: 40%;
-        background-color: rgba(0, 0, 0, 0);
+        grid-area: nav;
+        background-color: #a01a1a;
     }
 
     .nav__titulo {
-        font-size: 1.8rem;
-        margin-right: 25%;
+        font-size: 2.5rem;
+        color: #e85d04;
+        text-shadow: 0 2px 0 rgb(255, 255, 255);
+        letter-spacing: 0.1rem;
+        line-height: 16px;
     }
 
     .header__item--anchor {
-        font-size: 1.3rem;
-        padding: 5px;
+        font-size: 1.2rem;
+        padding: 0.1rem;
     }
-
-
     .imagen__logo {
         height: 11vh;
         width: 12vw;
-        position: static;
-        margin-top: 3%;
-        margin-left: 2%;
-
+        margin: 1% 10% 0 2%;
     }
 
     /* Main */
@@ -435,7 +445,4 @@ body {
         width: 4vw;
         height: 6vh;
     }
-
-
-
 }
