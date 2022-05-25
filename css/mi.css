@@ -131,14 +131,32 @@ body {
 }
 
 .main__titulo--h2 {
-    font-size: 35px;
+    font-size: 1.8rem;
 }
 
 /*servicios************************ */
 .imagen__servicio {
-    height: 350px;
-    width: 550px;
-    padding: 10px 0 50px 0;
+    height: 30vh;
+    width: 50vw;
+}
+
+.main__section--servicios {
+    margin: 3%;
+}
+
+.main__contenedor--serv,
+.article__servicio,
+.main__contenedor--servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__servicio {
+    align-items: center;
+}
+
+.main__titulo--h2 {
+    text-align: center;
 }
 
 /* Productos*/
@@ -162,21 +180,26 @@ body {
 }
 
 /* Galeria*/
+
 .main__titulo--comentario {
-    text-align: center;
     font-size: 1rem;
     color: #200505;
-    margin-bottom: 80px;
 }
 
 .main__article {
-    margin-top: 30px;
+    margin: 3%;
 }
 
 .imagen__servicio--galeria {
-    padding-bottom: 0px;
-    width: 350px;
-    height: 250px;
+    width: 50vw;
+    height: 30vh;
+}
+
+.main__article {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Contacto********************* */
@@ -311,6 +334,35 @@ body {
     .header__item--anchor {
         font-size: 1.3rem;
     }
+
+    /* Galeria******* */
+    .main {
+        margin: 1% 0;
+    }
+
+    .main__contenedor {
+        display: flex;
+        flex-wrap: no wrap;
+        gap: 1rem;
+        margin: 1% 0;
+    }
+
+    .imagen__servicio--galeria {
+        width: 18vw;
+        height: 20vh;
+    }
+
+    /*Servicios*/
+    .imagen__servicio {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .main__contenedor--serv {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
 }
 
 /* Desktop a partir de 768************************************************** */
@@ -475,4 +527,45 @@ body {
         width: 25vw;
         height: 20vh;
     }
+
+    /* Galeria******* */
+    .main {
+        margin: 5% 0;
+
+    }
+
+    .main__contenedor {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .imagen__servicio--galeria {
+        width: 22vw;
+        height: 25vh;
+    }
+
+    .main__contenedor--galeria {
+        align-content: center;
+    }
+
+    /*Servicios ***/
+    .main__contenedor--serv {
+
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+
+    .article__servicio {}
+
+    .imagen__servicio {
+        height: 50vh;
+        width: 40vw;
+    }
+    /*Productos*/
+    .main__contenedor--product{
+        display: flex;
+   }
+
 }
