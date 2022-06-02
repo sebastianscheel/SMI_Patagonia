@@ -17,30 +17,33 @@
 
 <body>
   <header class="header bg-dark">
-    <!-- La cabecera de Logo y Nombre-->
-    <div class="contenedor__logo">
-      <img class="imagen__logo" src="./img/logos/SMI_72DPI letras blancas.png" alt="pie de pagina" />
-      <h1 class="nav__titulo">Servicios de Mantenimiento Integral </h1>
-    </div>
-    <nav class="header__nav bg-gradient">
-      <!--Esta son los links de navegación-->
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__item--anchor" href="./index.html " target="_blanck">Home</a>
-        </li>
-        <li class="header__item">
-          <a class="header__item--anchor" href="./vistas/servicios.html">Servicios</a>
-        </li>
-        <li class="header__item">
-          <a class="header__item--anchor" href="./vistas/productos.html">Productos</a>
-        </li>
-        <li class="header__item">
-          <a class="header__item--anchor" href="./vistas/galeria.html">Galeria</a>
-        </li>
-        <li class="header__item">
-          <a class="header__item--anchor" href="./vistas/contacto.html">Contacto</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg header__nav">
+      <div class="container-fluid">
+        <img class="imagen__logo navbar-brand" src="./img/logos/SMI_72DPI letras blancas.png" alt="pie de pagina" />
+      </div>
+      <div class="container-fluid div__nav--color">
+        <button class="navbar-toggler button__nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav header__list">
+            <li class="nav-item header__item">
+              <a class="nav-link header__item--anchor" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__item--anchor" href="./vistas/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__item--anchor" href="./vistas/productos.html">Productos</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__item--anchor" href="./vistas/galeria.html">Galeria</a>
+            <li class="nav-item header__item">
+              <a class="nav-link header__item--anchor" href="./vistas/contacto.html">Contacto</a>
+            </li>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="main ">
@@ -122,6 +125,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
+
 </html>
