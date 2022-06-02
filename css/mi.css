@@ -67,13 +67,9 @@ body {
 }
 
 .header__item--anchor:hover {
-    background: #d00000;
+    background: #797878;
     border-radius: 8px;
-}
-
-.header__item--anchor:focus {
-    background: #e03004;
-    border-radius: 5px;
+    color: white;
 }
 
 /* CSS MAIN******************************* */
@@ -100,7 +96,7 @@ body {
     color: #200505;
     text-decoration: underline overline #050102;
     padding: 10px 0;
-    
+
 }
 
 .main__titulo--h2 {
@@ -203,6 +199,7 @@ body {
     align-items: center;
 }
 
+
 /* Contacto********************* */
 .main__section--contacto {
     padding-top: 3%;
@@ -303,11 +300,15 @@ body {
 .footer__copyrigth {
     color: #f4f4f8;
     font-size: 0.6rem;
+    margin: 5px;
 }
 
 .footer__anchor--imagen {
-    height: 7vh;
-    width: 7vw;
+    color: #f4f4f8;
+    width: 25px;
+    px;
+    height: 25px;
+    px;
 }
 
 /* *******************MEDIA QUERIES******************* */
@@ -463,8 +464,10 @@ body {
     }
 
     .footer__anchor--imagen {
-        height: 5vh;
-        width: 2vw;
+        color: #f4f4f8;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
     }
 
     .footer__copyrigth {
@@ -530,8 +533,8 @@ body {
     }
 
     /* Galeria******* */
-     
-  
+
+
     .main {
         margin: 5% 0;
 
@@ -564,63 +567,81 @@ body {
         height: 50vh;
         width: 40vw;
     }
+
     /*Productos*/
-    .main__contenedor--product{
+    .main__contenedor--product {
         display: flex;
-   }
-/*Animaciones*/
-/*1*/
-.mt-btn {
-    transition: ease-in .4s;
-}
-
-.mt-btn:hover {
-    transform: scale(1.3);
-}
-/*2*/
-.text__anim{
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count:1;
-  }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  /*3*/
-  .flip-in-ver-right, .main__titulo--comentario{
-    -webkit-animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
-            animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
-}
 
-@-webkit-keyframes flip-in-ver-right {
-0% {
-  -webkit-transform: rotateY(-80deg);
-          transform: rotateY(-80deg);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  opacity: 1;
-}
-}
-@keyframes flip-in-ver-right {
-0% {
-  -webkit-transform: rotateY(-80deg);
-          transform: rotateY(-80deg);
-  opacity: 0;
-}
-100% {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  opacity: 1;}
-}
+    /*Animaciones*/
+    /*1*/
+    .mt-btn {
+        transition: ease-in .4s;
+    }
+
+    .mt-btn:hover {
+        transform: scale(1.5);
+    }
+
+    .mt-btn__prod {
+        transition: ease-in .2s;
+    }
+
+    .mt-btn__prod:hover {
+        transform: scale(1.1);
+    }
+
+    /*2*/
+    .text__anim {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    /*3*/
+    .flip-in-ver-right,
+    .main__titulo--comentario {
+        -webkit-animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
+        animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
+    }
+
+    @-webkit-keyframes flip-in-ver-right {
+        0% {
+            -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes flip-in-ver-right {
+        0% {
+            -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }
 }
