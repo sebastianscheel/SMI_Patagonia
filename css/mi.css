@@ -37,8 +37,8 @@ body {
 .header__nav {
     grid-area: nav;
     }
-.button__nav{
-    justify-items: end;
+.button__nav !important {
+    justify-content: flex-end;
 }
 
 .contenedor__logo {
