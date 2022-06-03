@@ -91,13 +91,19 @@ body {
 
 .main__titulo {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #200505;
     text-decoration: underline overline #050102;
-    margin: 10px;
-    padding-top: 7px;
+    margin: 7px;
+    padding-top: 10px;
+}.main__titulo--gal{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #200505;
+    text-decoration: underline overline #050102;
+    margin-top: 6%;
 }
-
+ top
 .main__titulo--h2 {
     color: #200505;
 }
@@ -115,7 +121,7 @@ body {
     padding-bottom: 2%;
 }
 
-.main__contenedor--der {
+.card2 {
     display: none;
 }
 
@@ -132,19 +138,24 @@ body {
 
 /*servicios************************ */
 .imagen__servicio {
-    height: 30vh;
-    width: 50vw;
+    height: 15vh;
+    width: 35vw;
+    align-self: center;
+    margin-top: 3%;
+}
+.card1{
+    justify-content: center;
+    gap:3%
+}
+.div_card{
+    align-self:center;
+    margin-top: 3%;
+    background-color: rgb(187, 187, 187);
+    
 }
 
 .main__section--servicios {
-    margin: 3%;
-}
-
-.main__contenedor--serv,
-.article__servicio,
-.main__contenedor--servicios {
-    display: flex;
-    flex-direction: column;
+    margin: 8%;
 }
 
 .article__servicio {
@@ -153,6 +164,8 @@ body {
 
 .main__titulo--h2 {
     text-align: center;
+    font-size: 1.3rem;
+
 }
 
 /* Productos*/
@@ -366,10 +379,6 @@ body {
         padding: 0;
     }
 
-    .header__1 {
-        justify-content: start;
-    }
-
     .header__list {
         justify-content: end;
 
@@ -379,10 +388,12 @@ body {
         height: 12vh;
         width: 12vw;
     }
-
+    
     /* Main */
-    .main__contenedor--der {
-        display: contents;
+    
+    .card2{
+        margin-top: 5%;
+        display: block;
     }
 
     .main__contenedor--izq {
@@ -504,11 +515,12 @@ body {
     }
 
     /* Galeria******* */
-
-
-    .main {
-        margin: 5% 0;
-
+    .main__titulo--gal{
+        text-align: center;
+        font-size: 1.3rem;
+        color: #200505;
+        text-decoration: underline overline #050102;
+        margin: 6% 0 1% 0;
     }
 
     .main__contenedor {
@@ -517,31 +529,45 @@ body {
     }
 
     .imagen__servicio--galeria {
-        width: 22vw;
-        height: 25vh;
+        width: 50vw;
     }
-
+    .tann{
+        width: 50vw;
+        height: 40vh;
+    }
+    .tam{
+        height: 100%;
+        width: 100%;
+    }
     .main__contenedor--galeria {
         align-content: center;
     }
 
     /*Servicios ***/
-    .main__contenedor--serv {
-
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 10px;
-
-    }
-
     .imagen__servicio {
-        height: 50vh;
-        width: 40vw;
+        height: 30vh;
+        width: 25vw;
+        align-self: center;
+        margin-top: 3%;
+    }
+    .card1{
+        justify-content: center;
+        gap:5%;
+        margin: 5%;
+    }
+    .div_card{
+        align-self:center;
+    }
+    .main__section--servicios{
+        margin-top: 6%;
     }
 
     /*Productos*/
     .main__contenedor--product {
         display: flex;
+    }
+    .main__titulo{
+        margin: 6%;
     }
 
     /*Animaciones*/
