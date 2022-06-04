@@ -205,7 +205,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.div__carousel {
+    width: 65vw;
+    height: 40vh;
+}
 
+.div__carousel-img {
+    height: 100%;
+    width: 100%;
+}
 
 /* Contacto********************* */
 .main__contenedor--form,
