@@ -28,17 +28,19 @@ body {
 
 .main__titulo {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     color: #200505;
     text-decoration: underline overline #050102;
-    margin: 0 auto;
+    margin-bottom: 3%;
     padding: 0 auto;
 }
 
 .main__titulo--h2 {
-    color: #200505;
+    color: #a70000;
     font-size: 1.7rem;
     text-align: center;
+    padding-bottom: 2%;
+
 }
 
 .main__titulo--comentario {
@@ -117,12 +119,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 6%;
 }
 
 /* IMG y texto SMI inicio*/
 .main__contenedor--izq {
     width: 95%;
-    margin: 8% 0 1% 2%;
     background: #ca0a0ad8;
     border-radius: 35px 0px 35px 0px;
     border: 2px solid #0d0d0e;
@@ -165,11 +167,6 @@ body {
     background-color: rgb(187, 187, 187);
 
 }
-
-.main__section--servicios {
-    margin: 8%;
-}
-
 .article__servicio {
     align-items: center;
 }
@@ -375,18 +372,18 @@ body {
     /* Main */
 
     .card2 {
-        margin-top: 5%;
         display: block;
     }
 
     .main__contenedor--izq {
-        margin: 5%;
+        width: 70%;
+        padding: 2%;
     }
-
     .main__header {
         display: flex;
         width: 90%;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-bottom: 5%;
     }
 
     .main__imagen {
@@ -440,7 +437,6 @@ body {
     .main__section--contacto {
         display: flex;
         padding: 0 auto;
-        margin: 3% 0;
     }
 
     .main__contenedor--links {
