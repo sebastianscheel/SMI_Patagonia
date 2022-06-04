@@ -210,10 +210,6 @@ body {
 
 
 /* Contacto********************* */
-.main__section--contacto {
-    padding-top: 3%;
-}
-
 .main__contenedor--form,
 .main__contenedor--links {
     display: flex;
@@ -519,7 +515,6 @@ body {
     .card1 {
         justify-content: center;
         gap: 5%;
-        margin: 5%;
     }
 
     .div_card {
@@ -533,6 +528,7 @@ body {
     /*Productos*/
     .main__contenedor--product {
         display: flex;
+        padding-top: 5%;
     }
 
     /*Animaciones*/
