@@ -19,6 +19,45 @@ body {
         "footer footer footer" 70px / auto;
 }
 
+/* TEXTOS DE TITULOS PARRAFOS tipografia tamaño color*/
+.div__texto--p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7e0303;
+}
+
+.main__titulo {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #200505;
+    text-decoration: underline overline #050102;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.main__titulo--h2 {
+    color: #200505;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.main__titulo--comentario {
+    font-size: 1rem;
+    color: #200505;
+}
+
+.main__parrafo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.footer__copyrigth {
+    color: #f4f4f8;
+    font-size: 0.6rem;
+    margin: 5px;
+}
+
 /* CSS HEADER***************************** */
 .header {
     grid-area: header;
@@ -30,7 +69,6 @@ body {
 .header__list {
     display: flex;
     width: 100%;
-    padding: 0 5px;
     margin: 0;
     text-align: center;
 }
@@ -46,10 +84,11 @@ body {
 }
 
 .imagen__logo {
-    width: 75px;
-    height: 45px;
-    margin-top: 1%;
-    margin-left: 5%;
+   margin-left: 6%;
+   
+}
+.header__nav--items{
+    margin-bottom: 1%;
 }
 
 .header__item {
@@ -63,6 +102,7 @@ body {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
+    padding: 0;
 }
 
 .header__item--anchor:hover {
@@ -77,7 +117,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
 }
 
 /* IMG y texto SMI inicio*/
@@ -87,31 +126,6 @@ body {
     background: #ca0a0ad8;
     border-radius: 35px 0px 35px 0px;
     border: 2px solid #0d0d0e;
-}
-
-.main__titulo {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #200505;
-    text-decoration: underline overline #050102;
-    margin: 7px;
-    padding-top: 10px;
-}.main__titulo--gal{
-    text-align: center;
-    font-size: 1.1rem;
-    color: #200505;
-    text-decoration: underline overline #050102;
-    margin-top: 6%;
-}
- top
-.main__titulo--h2 {
-    color: #200505;
-}
-
-.main__parrafo {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #ffffff;
 }
 
 .main__iframe {
@@ -132,10 +146,6 @@ body {
     flex-direction: column;
 }
 
-.main__titulo--h2 {
-    font-size: 1.8rem;
-}
-
 /*servicios************************ */
 .imagen__servicio {
     height: 15vh;
@@ -143,15 +153,17 @@ body {
     align-self: center;
     margin-top: 3%;
 }
-.card1{
+
+.card1 {
     justify-content: center;
-    gap:3%
+    gap: 3%
 }
-.div_card{
-    align-self:center;
+
+.div_card {
+    align-self: center;
     margin-top: 3%;
     background-color: rgb(187, 187, 187);
-    
+
 }
 
 .main__section--servicios {
@@ -160,12 +172,6 @@ body {
 
 .article__servicio {
     align-items: center;
-}
-
-.main__titulo--h2 {
-    text-align: center;
-    font-size: 1.3rem;
-
 }
 
 /* Productos*/
@@ -189,12 +195,6 @@ body {
 }
 
 /* Galeria*/
-
-.main__titulo--comentario {
-    font-size: 1rem;
-    color: #200505;
-}
-
 .main__article {
     margin: 3%;
 }
@@ -228,9 +228,6 @@ body {
     align-items: center;
 }
 
-.main__titulo {
-    font-size: 1.3rem;
-}
 
 .div__form {
     height: 50%;
@@ -309,12 +306,6 @@ body {
     padding: 0px 8px;
 }
 
-.footer__copyrigth {
-    color: #f4f4f8;
-    font-size: 0.6rem;
-    margin: 5px;
-}
-
 .footer__anchor--imagen {
     color: #f4f4f8;
     width: 25px;
@@ -329,22 +320,15 @@ body {
     .header__nav {
         grid-area: nav;
         padding: 0;
-
     }
-
     .contenedor__logo {
         align-items: center;
     }
-
     .header__item--anchor {
         font-size: 1.3rem;
     }
 
     /* Galeria******* */
-    .main {
-        margin: 1% 0;
-    }
-
     .main__contenedor {
         display: flex;
         flex-wrap: no wrap;
@@ -374,24 +358,23 @@ body {
 @media screen and (min-width: 768px) {
 
     /* header*/
-    .header__nav {
-        flex-direction: column;
-        padding: 0;
+    .header{
+        height: 110px;
     }
-
-    .header__list {
-        justify-content: end;
-
+    .header__nav{
+        height: 100%;
     }
-
     .imagen__logo {
         height: 12vh;
         width: 12vw;
     }
-    
+    .header__nav--items{
+        align-self: flex-end;
+        padding-left: 8%;
+    }
     /* Main */
-    
-    .card2{
+
+    .card2 {
         margin-top: 5%;
         display: block;
     }
@@ -417,11 +400,6 @@ body {
         height: 55vh;
         width: 50vw;
         padding-bottom: 5%;
-    }
-
-    .main__titulo--h2 {
-        text-align: center;
-        margin: 1.5rem;
     }
 
     /*Footer */
@@ -472,10 +450,6 @@ body {
         padding-left: 20%;
     }
 
-    .main__titulo {
-        font-size: 1.5rem;
-    }
-
     .ul__contact,
     .ul__contact--imagen {
         display: flex;
@@ -515,14 +489,6 @@ body {
     }
 
     /* Galeria******* */
-    .main__titulo--gal{
-        text-align: center;
-        font-size: 1.3rem;
-        color: #200505;
-        text-decoration: underline overline #050102;
-        margin: 6% 0 1% 0;
-    }
-
     .main__contenedor {
         display: flex;
         gap: 1rem;
@@ -531,14 +497,17 @@ body {
     .imagen__servicio--galeria {
         width: 50vw;
     }
-    .tann{
+
+    .tann {
         width: 50vw;
         height: 40vh;
     }
-    .tam{
+
+    .tam {
         height: 100%;
         width: 100%;
     }
+
     .main__contenedor--galeria {
         align-content: center;
     }
@@ -550,24 +519,24 @@ body {
         align-self: center;
         margin-top: 3%;
     }
-    .card1{
+
+    .card1 {
         justify-content: center;
-        gap:5%;
+        gap: 5%;
         margin: 5%;
     }
-    .div_card{
-        align-self:center;
+
+    .div_card {
+        align-self: center;
     }
-    .main__section--servicios{
+
+    .main__section--servicios {
         margin-top: 6%;
     }
 
     /*Productos*/
     .main__contenedor--product {
         display: flex;
-    }
-    .main__titulo{
-        margin: 6%;
     }
 
     /*Animaciones*/
@@ -577,7 +546,7 @@ body {
     }
 
     .mt-btn:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
     }
 
     .mt-btn__prod {
