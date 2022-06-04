@@ -33,6 +33,7 @@ body {
     text-decoration: underline overline #050102;
     margin-bottom: 3%;
     padding: 0 auto;
+    margin-top: 3.1rem;
 }
 
 .main__titulo--h2 {
@@ -55,11 +56,10 @@ body {
 }
 
 .footer__copyrigth {
-    color: #f4f4f8;
-    font-size: 0.6rem;
-    margin: 5px;
+    margin: 0;
+    padding-top: 4%;
+    font-size: 0.7rem;
 }
-
 /* CSS HEADER***************************** */
 .header {
     grid-area: header;
@@ -87,10 +87,8 @@ body {
 
 .imagen__logo {
    margin-left: 6%;
-   
-}
-.header__nav--items{
-    margin-bottom: 1%;
+   height: 5rem;
+   width: 10rem;
 }
 
 .header__item {
@@ -246,7 +244,6 @@ body {
     text-decoration: none;
     font-size: 1rem;
     color: #ffffff;
-
 }
 
 .ul__links--anchor:hover {
@@ -309,16 +306,23 @@ body {
 
 /* Tablet hasta 480px***************************************************************/
 @media screen and (min-width: 500px) {
-
+    .imagen__logo {
+        margin-left: 6%;
+        height: 5rem;
+        width: 10rem;
+     }
     .header__nav {
         grid-area: nav;
-        padding: 0;
+        padding: 0.5rem;
     }
     .contenedor__logo {
         align-items: center;
     }
     .header__item--anchor {
         font-size: 1.3rem;
+    }
+    .main__titulo{
+        margin-top: 3rem;
     }
 
     /* Galeria******* */
@@ -356,14 +360,16 @@ body {
     }
     .header__nav{
         height: 100%;
+        padding: 0;
     }
     .imagen__logo {
-        height: 12vh;
-        width: 12vw;
-    }
+        margin-left: 6%;
+        height: 5rem;
+        width: 10rem;
+     }
     .header__nav--items{
         align-self: flex-end;
-        padding-left: 8%;
+        padding:0.5rem
     }
     /* Main */
 
@@ -490,12 +496,12 @@ body {
         width: 50vw;
     }
 
-    .tann {
-        width: 50vw;
-        height: 40vh;
+    .div__carousel {
+        width: 45vw;
+        height: 60vh;
     }
 
-    .tam {
+    .div__carousel-img {
         height: 100%;
         width: 100%;
     }
