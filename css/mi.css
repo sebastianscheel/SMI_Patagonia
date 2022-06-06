@@ -11,6 +11,8 @@ html {
 
 /* CSS BODY******************************** */
 body {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(240, 231, 231);
     display: grid;
     grid-template:
@@ -118,6 +120,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 6%;
+    flex: 1;
 }
 
 /* IMG y texto SMI inicio*/
