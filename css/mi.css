@@ -11,8 +11,6 @@ html {
 
 /* CSS BODY******************************** */
 body {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(240, 231, 231);
     display: grid;
     grid-template:
@@ -120,7 +118,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 6%;
-    flex: 1;
 }
 
 /* IMG y texto SMI inicio*/
@@ -189,6 +186,9 @@ body {
 .main__contenedor--productos {
     text-align: center;
    
+}
+.main__tabla--producto{
+    margin: 6% 0;
 }
 
 /* Galeria*/
@@ -536,10 +536,7 @@ body {
     }
 
     /*Productos*/
-    .main__contenedor--product {
-        display: flex;
-        padding-top: 5%;
-    }
+   
 
     /*Animaciones*/
     /*1*/
