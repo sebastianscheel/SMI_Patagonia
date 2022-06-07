@@ -128,7 +128,7 @@ body {
     width: 95%;
     background: #ca0a0ad8;
     border-radius: 35px 0px 35px 0px;
-    border: 2px solid #0d0d0e;
+    border: 0.1rem solid #0d0d0e;
 }
 
 .main__iframe {
@@ -183,7 +183,7 @@ body {
 
 .tabla__contenido {
     border: 1px solid #050102;
-    padding: 3px;
+    padding: 0.5rem;
 }
 
 .main__contenedor--productos {
@@ -252,7 +252,7 @@ body {
 
 .ul__links--anchor:hover {
     background: #694848f8;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .ul__links--imagen {
