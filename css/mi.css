@@ -188,7 +188,7 @@ body {
    
 }
 .main__tabla--producto{
-    margin: 6% 0;
+    margin: 6% 0 ;
 }
 
 /* Galeria*/
@@ -202,8 +202,8 @@ body {
     align-items: center;
 }
 .div__carousel {
-    width: 15rem;
-    height: 10rem;
+    width: 25rem;
+    height: 20rem;
 }
 
 .div__carousel-img {
