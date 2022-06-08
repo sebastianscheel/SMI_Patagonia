@@ -1,0 +1,59 @@
+/* SASS MAIN */
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6%;
+    &__titulo {
+        text-align: center;
+        font-size: 1.9rem;
+        color: #524d4d;
+        text-decoration: underline overline #050102;
+        margin-bottom: 3%;
+        padding: 0 auto;
+        margin-top: 3.1rem;
+        font-weight: bold;
+    }
+    &__contenedor--izq {
+        width: 95%;
+        background: $colorTitulo;
+        border-radius: 35px 0px 35px 0px;
+        border: 0.1rem solid #0d0d0e;
+    }
+    &__parrafo {
+        text-align: center;
+        font-size: 1.2rem;
+        color:  $colorBg;        
+    }
+    &__iframe {
+        height: 25vh;
+        width: 67vw;
+        align-self: center;
+        padding-bottom: 2%;
+    }    
+    .div__card {
+        display: none;
+        
+    }
+    .div__card--texto {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $colorTitulo;
+    }
+
+    .article__section--index {
+        display: flex;
+        flex-direction: column;
+    }      
+    &__titulo--h2 {
+        color: $colorTitulo;
+        font-size: 1.7rem;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+}
+.main__titulo--comentario {
+    font-size: 1rem;
+    color: $colorTitulo;
+}

@@ -1,0 +1,60 @@
+/* *******************MEDIA QUERIES******************* */
+
+/* Tablet hasta 480px***************************************************************/
+@media screen and (min-width: 480px) {
+    //---------SASS HEADER----------------------------
+    .header {
+        .imagen__logo {
+            margin-left: 6%;
+            height: 5rem;
+            width: 10rem;
+         }
+        &__nav {
+            grid-area: nav;
+            padding: 0.5rem;
+        }
+        .contenedor__logo {
+            align-items: center;
+        }
+        &__item--anchor {
+            font-size: 1.3rem;
+        }
+        .main__titulo{
+            margin-top: 3rem;
+        }
+    }
+   
+    .footer__copyrigth {
+        margin: 0;
+        padding-top: 3%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .div__card {
+            display: block;
+        }
+
+    /* Galeria******* */
+    .main__contenedor {
+        display: flex;
+        flex-wrap: no wrap;
+        gap: 1rem;
+        margin: 1% 0;
+    }
+
+    .imagen__servicio--galeria {
+        width: 18vw;
+        height: 20vh;
+    }
+
+    /*Servicios*/
+    .imagen__servicio {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .main__contenedor--serv {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

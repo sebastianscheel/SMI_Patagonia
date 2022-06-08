@@ -32,6 +32,7 @@ body {
       color: #f4f4f8; }
   .header__nav {
     grid-area: nav; }
+<<<<<<< HEAD
     .header__nav__list {
       display: flex;
       width: 100%;
@@ -42,6 +43,19 @@ body {
     .header__nav .div__nav--color {
       --bs-bg-opacity: 1;
       background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
+=======
+  .header__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center; }
+    .header__list__item {
+      list-style: none; }
+  .header .div__nav--color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
+>>>>>>> SASS
   .header .imagen__logo {
     margin-left: 6%;
     width: 10rem;
@@ -124,6 +138,13 @@ body {
 
 .main__tabla--producto {
   margin: 6% 0; }
+<<<<<<< HEAD
+=======
+
+.div__container {
+  justify-content: center;
+  gap: 5rem; }
+>>>>>>> SASS
 
 /* Galeria*/
 .main__article {
@@ -216,6 +237,7 @@ body {
     padding-top: 1%;
     font-size: 0.8rem;
     text-align: center; }
+<<<<<<< HEAD
 
 /*Animaciones*/
 /*1*/
@@ -268,6 +290,8 @@ body {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
     opacity: 1; } }
+=======
+>>>>>>> SASS
 
 /* *******************MEDIA QUERIES******************* */
 /* Tablet hasta 480px***************************************************************/
@@ -423,3 +447,58 @@ body {
     align-self: center; }
   .main__section--servicios {
     margin-top: 6%; } }
+<<<<<<< HEAD
+=======
+
+/*Animaciones*/
+/*1*/
+.mt-btn {
+  transition: ease-in .4s; }
+  .mt-btn:hover {
+    transform: scale(1.3); }
+
+.mt-btn__prod {
+  transition: ease-in .2s; }
+  .mt-btn__prod:hover {
+    transform: scale(1.1); }
+
+/*2*/
+.text__anim {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+/*3*/
+.flip-in-ver-right,
+.main__titulo--comentario {
+  -webkit-animation: flip-in-ver-right 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite both;
+  animation: flip-in-ver-right 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s infinite both; }
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
+
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
+>>>>>>> SASS

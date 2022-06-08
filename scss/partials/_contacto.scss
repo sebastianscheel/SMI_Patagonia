@@ -1,0 +1,55 @@
+/* Contacto********************* */
+.main__contenedor--form,
+.main__contenedor--links {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__contenedor--links {
+    margin-top: 10%;
+    align-items: center;
+}
+
+
+.div__form {
+    height: 50%;
+    width: 50%;
+
+}
+
+.ul__contact,
+.ul__contact--imagen {
+    background-color: #a01a1a;
+    width: 45vh;
+}
+
+.ul__links {
+    padding: 0;
+
+}
+
+.ul__contact,
+.ul__links--anchor,
+.ul__contact--imagen {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.ul__links--anchor:hover {
+    background: #694848f8;
+    border-radius: 0.5rem;
+}
+
+.ul__links--imagen {
+    width: 5vh;
+    height: 5vw;
+    margin-right: 1rem;
+}
+
+.div__ubicacion {
+    height: 30vh;
+    width: 50vw;
+    padding: 2% 0;
+}
