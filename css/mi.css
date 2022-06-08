@@ -371,6 +371,11 @@ body {
     align-self: center; }
   .main__section--servicios {
     margin-top: 6%; } }
+    /*Productos ***/
+    .div__container{
+      justify-content: center;
+      gap: 5rem;
+    }
 
 /*Animaciones*/
 /*1*/
