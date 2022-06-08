@@ -190,6 +190,10 @@ body {
   width: 50vw;
   padding: 2% 0; }
 
+.iframe__ubicacion {
+  width: 15rem;
+  margin-top: 1rem; }
+
 /* SASS FOOTER */
 .footer {
   grid-area: footer;
