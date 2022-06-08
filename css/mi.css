@@ -127,8 +127,7 @@ body {
   margin: 6% 0; }
 
 .div__container {
-  justify-content: center;
-  gap: 5rem; }
+  justify-content: center; }
 
 /* Galeria*/
 .main__article {
@@ -375,7 +374,9 @@ body {
   .div_card {
     align-self: center; }
   .main__section--servicios {
-    margin-top: 6%; } }
+    margin-top: 6%; }
+  .div__container {
+    gap: 5rem; } }
 
 /*Animaciones*/
 /*1*/
