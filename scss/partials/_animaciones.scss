@@ -1,0 +1,70 @@
+/*Animaciones*/
+    /*1*/
+    //SASS ANIMACIONES----------------------------
+    .mt-btn {
+        transition: ease-in .4s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    .mt-btn__prod {
+        transition: ease-in .2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    /*2*/
+    .text__anim {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    /*3*/
+    .flip-in-ver-right,
+    .main__titulo--comentario {
+        -webkit-animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
+        animation: flip-in-ver-right 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite both;
+    }
+
+    @-webkit-keyframes flip-in-ver-right {
+        0% {
+            -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes flip-in-ver-right {
+        0% {
+            -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+            opacity: 1;
+        }
+    }

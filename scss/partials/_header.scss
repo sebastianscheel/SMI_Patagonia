@@ -1,0 +1,42 @@
+/* SASS HEADER */
+.header {
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    &__item--anchor {
+        list-style: none;
+        color: $colorBg;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 0;
+        
+        &:hover {
+            background: $colorTitulo;
+            border-radius: 5px;
+            color: $colorBg;
+        }
+    }        
+    &__nav {
+        grid-area: nav;
+        &__list {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            &__item {
+                list-style: none;
+            }
+        }
+        .div__nav--color {
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+        }
+    }    
+    .imagen__logo {
+       margin-left: 6%;
+       width: $tamwLogo;
+       height: $tamLhogo;
+    }        
+}
