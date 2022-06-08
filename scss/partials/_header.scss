@@ -20,20 +20,22 @@
     }        
     &__nav {
         grid-area: nav;
-        &__list {
+        
+        }
+    &__list {
             display: flex;
             width: 100%;
             margin: 0;
             text-align: center;
+            align-items: center;
             &__item {
                 list-style: none;
             }
-        }
-        .div__nav--color {
-            --bs-bg-opacity: 1;
-            background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-        }
-    }    
+    } 
+    .div__nav--color {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    }   
     .imagen__logo {
        margin-left: 6%;
        width: $tamwLogo;

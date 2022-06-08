@@ -32,16 +32,17 @@ body {
       color: #f4f4f8; }
   .header__nav {
     grid-area: nav; }
-    .header__nav__list {
-      display: flex;
-      width: 100%;
-      margin: 0;
-      text-align: center; }
-      .header__nav__list__item {
-        list-style: none; }
-    .header__nav .div__nav--color {
-      --bs-bg-opacity: 1;
-      background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
+  .header__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center; }
+    .header__list__item {
+      list-style: none; }
+  .header .div__nav--color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
   .header .imagen__logo {
     margin-left: 6%;
     width: 10rem;
