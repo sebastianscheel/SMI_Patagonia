@@ -17,7 +17,7 @@ body {
 /* TEXTOS DE TITULOS PARRAFOS tipografia tamaño color*/
 .main__titulo--comentario {
   font-size: 1rem;
-  color: #200505; }
+  color: #7e0303; }
 
 /* SASS HEADER */
 .header {
@@ -67,19 +67,28 @@ body {
     text-decoration: underline overline #050102;
     margin-bottom: 3%;
     padding: 0 auto;
-    margin-top: 3.1rem; }
+    margin-top: 3.1rem;
+    font-weight: bold; }
   .main__contenedor--izq {
     width: 95%;
     background: #7e0303;
     border-radius: 35px 0px 35px 0px;
     border: 0.1rem solid #0d0d0e; }
+  .main__parrafo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f4f4f8; }
   .main__iframe {
     height: 25vh;
     width: 67vw;
     align-self: center;
     padding-bottom: 2%; }
-  .main .card2 {
+  .main .div__card {
     display: none; }
+  .main .div__card--texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7e0303; }
   .main .article__section--index {
     display: flex;
     flex-direction: column; }
@@ -88,14 +97,6 @@ body {
     font-size: 1.7rem;
     text-align: center;
     padding-bottom: 2%; }
-  .main .div__texto--p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #7e0303; }
-  .main__parrafo {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #f4f4f8; }
 
 /* SASS FOOTER */
 .footer {
@@ -108,24 +109,25 @@ body {
     display: flex;
     align-items: center; }
   .footer__logo {
-    width: 10rem;
-    height: 5rem; }
+    width: 7rem;
+    height: 3rem; }
   .footer__div {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .footer__div__div--anchor {
-      padding-top: 5px; }
-    .footer__div__anchor {
-      padding: 0px 8px; }
-      .footer__div__anchor__anchor--imagen {
-        color: #f4f4f8;
-        width: 25px;
-        height: 25px; }
+  .footer__div--anchor {
+    padding-top: 5px; }
+  .footer__anchor {
+    padding: 0px 8px; }
+  .footer__anchor--imagen {
+    color: #f4f4f8;
+    width: 25px;
+    height: 25px; }
   .footer__copyrigth {
     margin: 0;
-    padding-top: 4%;
-    font-size: 0.7rem; }
+    padding-top: 1%;
+    font-size: 0.8rem;
+    text-align: center; }
 
 /*servicios************************ */
 .imagen__servicio {
@@ -133,10 +135,6 @@ body {
   width: 35vw;
   align-self: center;
   margin-top: 3%; }
-
-.card1 {
-  justify-content: center;
-  gap: 3%; }
 
 .div_card {
   align-self: center;
@@ -237,6 +235,13 @@ body {
     font-size: 1.3rem; }
   .header .main__titulo {
     margin-top: 3rem; }
+  .footer__copyrigth {
+    margin: 0;
+    padding-top: 3%;
+    font-size: 0.9rem;
+    text-align: center; }
+  .div__card {
+    display: block; }
   /* Galeria******* */
   .main__contenedor {
     display: flex;
@@ -268,8 +273,9 @@ body {
     .header__nav--items {
       align-self: flex-end;
       padding: 0.5rem; }
-  .main .card2 {
-    display: block; }
+  .main .div__card {
+    display: block;
+    margin-left: 1rem; }
   .main__contenedor--izq {
     width: 70%;
     padding: 2%; }
@@ -290,9 +296,9 @@ body {
   .footer {
     height: 15vh;
     justify-content: space-between; }
-    .footer__logo {
-      width: 11vw;
-      height: 12vh; }
+    .footer .footer__logo {
+      width: 10rem;
+      height: 5rem; }
     .footer__div {
       align-self: center;
       padding-right: 35%;
@@ -362,9 +368,6 @@ body {
     width: 25vw;
     align-self: center;
     margin-top: 3%; }
-  .card1 {
-    justify-content: center;
-    gap: 5%; }
   .div_card {
     align-self: center; }
   .main__section--servicios {
