@@ -1,3 +1,17 @@
+.titulo__serv1 {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 250;
+  text-align: center; }
+
+.titulo__serv2 {
+  font-size: 1.7rem;
+  color: red;
+  font-weight: 100;
+  text-align: start;
+  margin: 1rem;
+  padding-left: 3rem; }
+
 /* CSS RESET******************************** */
 * {
   margin: 0;
@@ -64,6 +78,11 @@ body {
     padding: 0 auto;
     margin-top: 3.1rem;
     font-weight: bold; }
+  .main__titulo--h2 {
+    color: #7e0303;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 2%; }
   .main__contenedor--izq {
     width: 95%;
     background: #7e0303;
@@ -87,15 +106,15 @@ body {
   .main .article__section--index {
     display: flex;
     flex-direction: column; }
-  .main__titulo--h2 {
-    color: #7e0303;
-    font-size: 1.7rem;
-    text-align: center;
-    padding-bottom: 2%; }
 
 .main__titulo--comentario {
   font-size: 1rem;
   color: #7e0303; }
+
+.main__parrafo--serv {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black; }
 
 /*servicios************************ */
 .imagen__servicio {
@@ -109,8 +128,48 @@ body {
   margin-top: 3%;
   background-color: #bbbbbb; }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.card-body--2 {
+  margin-top: 3rem; }
+
 .article__servicio {
   align-items: center; }
+
+.boton, .boton2, .boton3, .boton4 {
+  background-color: red;
+  text-align: center;
+  color: beige;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 2px;
+  border: 1px solid black; }
+  .boton:hover, .boton2:hover, .boton3:hover, .boton4:hover {
+    border-radius: 2px;
+    border: 1px solid black;
+    filter: opacity(75%); }
+
+.boton2 {
+  background-color: #09ff00;
+  color: beige; }
+
+.boton3 {
+  background-color: #1100ff;
+  color: beige; }
+
+.boton4 {
+  background-color: #e5ff00;
+  color: beige; }
+
+.div2__servi {
+  background-color: grey;
+  border-radius: 2rem;
+  border: 0.1rem solid #920c0c;
+  margin-bottom: 2rem; }
 
 /* Productos*/
 .tabla__encabezado {
