@@ -1,14 +1,19 @@
-@mixin fontZise($size,$color,$weight,$aling){
+/*      MIXIN     */
+@mixin fontZise($size, $color, $weight, $aling) {
     font-size: $size;
     color: $color;
-    font-weight: $weight; 
-    text-align: $aling;  
+    font-weight: $weight;
+    text-align: $aling;
 }
-.titulo__serv1{
-    @include fontZise(1.4rem,black,250,center);
+
+.titulo__serv1 {
+    @include fontZise(1.4rem, black, 250, center);
 }
-.titulo__serv2{
-    @include fontZise(1.3rem,red,100,start);
+
+.titulo__serv2 {
+    @include fontZise(1.3rem, $colorTitulo, 100, start);
     margin: 1rem;
     padding-left: 3rem;
+    font-style: italic;
+    text-decoration: underline;
 }

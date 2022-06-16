@@ -4,191 +4,197 @@
 @media screen and (min-width: 768px) {
 
     //-------SASS HEADER----------------------------
-        .header{
-            height: 110px;
-    
-            &__nav{
-                height: 100%;
-                padding: 0;
-            }
-            &__logo {
-                margin-left: 6%;
-                height: 5rem;
-                width: 10rem;
-             }
-            &__nav--items{
-                align-self: flex-end;
-                padding:0.5rem
-            }
-            
-        }
-        
-    //-------SASS MAIN----------------------------
-        .main{
-            .div__card {
-                display: block;
-                margin-left: 1rem;
-            }
-        
-            &__contenedor--izq {
-                width: 70%;
-                padding: 2%;
-            }
-            &__header {
-                display: flex;
-                width: 90%;
-                justify-content: space-between;
-                padding-bottom: 5%;
-            }
-        
-            &__imagen {
-                height: 30vh;
-                width: 25vw;
-                margin-top: 15%;
-                margin-left: 10px;
-            }
-        
-            &__iframe {
-                height: 55vh;
-                width: 50vw;
-                padding-bottom: 5%;
-            }
-        }
-        
-    
-    // -------SASS FOOTER-----------------
-       
-        .footer {
-            height: 15vh;
-            justify-content: space-between;
-    
-            .footer__logo {
-                width: $tamwLogo;
-                height: $tamLhogo;
-            }
-        
-            &__div {
-                align-self: center;
-                padding-right: 35%;
-                align-content: center;
-            }
-        
-            &__logo {
-                margin-left: 25%;
-            }
-        
-            &__anchor--imagen {
-                color: #f4f4f8;
-                width: 30px;
-                height: 30px;
-                margin: 0 10px;
-            }
-        
-            &__copyrigth {
-                color: #f4f4f8;
-                font-size: 1rem;
-            }
-        }
-        
-    
-        /* Contacto */
-    
-        .main__section--contacto {
-            display: flex;
-            padding: 0 auto;
-        }
-    
-        .main__contenedor--links {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            padding-left: 20%;
-        }
-    
-        .ul__contact,
-        .ul__contact--imagen {
-            display: flex;
-            margin-bottom: 0.6rem;
-            width: 100%;
-            background: none;
-            justify-content: flex-start;
-            color: #0d0d0e;
-            padding-left: 18%;
-        }
-    
-        .ul__links--anchor,
-        .ul__contact--imagen {
-            color: #0d0d0e;
-            display: flex;
-            align-items: center;
-        }
-    
-        .div__ubicacion {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .ul__links--imagen {
-            width: 4vw;
-            height: 6vh;
-        }
-    
-        .div__form {
-            height: 15vh;
-            width: 15vw;
-        }
-    
-        .iframe__ubicacion {
-            width: 25vw;
-            height: 20vh;
-        }
-    
-        /* Galeria******* */
-        .main__contenedor {
-            display: flex;
-            gap: 1rem;
-        }
-    
-        .imagen__servicio--galeria {
-            width: 50vw;
-        }
-    
-        .div__carousel {
-            width: 45vw;
-            height: 60vh;
-        }
-    
-        .div__carousel-img {
+    .header {
+        height: 110px;
+
+        &__nav {
             height: 100%;
-            width: 100%;
+            padding: 0;
         }
-    
-        .main__contenedor--galeria {
-            align-content: center;
+
+        &__logo {
+            margin-left: 6%;
+            height: 5rem;
+            width: 10rem;
         }
-    
-        /*Servicios ***/
-        .imagen__servicio {
+
+        &__nav--items {
+            align-self: flex-end;
+            padding: 0.5rem
+        }
+
+    }
+
+    //-------SASS MAIN----------------------------
+    .main {
+        .div__card {
+            display: block;
+            margin-left: 1rem;
+        }
+
+        &__contenedor--izq {
+            width: 70%;
+            padding: 2%;
+        }
+
+        &__header {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            padding-bottom: 5%;
+        }
+
+        &__imagen {
             height: 30vh;
             width: 25vw;
+            margin-top: 15%;
+            margin-left: 10px;
+        }
+
+        &__iframe {
+            height: 55vh;
+            width: 50vw;
+            padding-bottom: 5%;
+        }
+    }
+
+
+    // -------SASS FOOTER-----------------
+
+    .footer {
+        height: 15vh;
+        justify-content: space-between;
+
+        .footer__logo {
+            width: $tamwLogo;
+            height: $tamLhogo;
+        }
+
+        &__div {
             align-self: center;
-            margin-top: 3%;
+            padding-right: 35%;
+            align-content: center;
         }
-    
-        .div_card {
-            align-self: center;
-            width: 23rem;
-            height: 22rem;
+
+        &__logo {
+            margin-left: 25%;
         }
-    
-        .main__section--servicios {
-            margin-top: 6%;
+
+        &__anchor--imagen {
+            color: #f4f4f8;
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
         }
-        .div__container{
-            gap: 5rem;
+
+        &__copyrigth {
+            color: #f4f4f8;
+            font-size: 1rem;
         }
+    }
+
+
+    /* Contacto */
+
+    .main__section--contacto {
+        display: flex;
+        padding: 0 auto;
+    }
+
+    .main__contenedor--links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 20%;
+    }
+
+    .ul__contact,
+    .ul__contact--imagen {
+        display: flex;
+        margin-bottom: 0.6rem;
+        width: 100%;
+        background: none;
+        justify-content: flex-start;
+        color: #0d0d0e;
+        padding-left: 18%;
+    }
+
+    .ul__links--anchor,
+    .ul__contact--imagen {
+        color: #0d0d0e;
+        display: flex;
+        align-items: center;
+    }
+
+    .div__ubicacion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul__links--imagen {
+        width: 4vw;
+        height: 6vh;
+    }
+
+    .div__form {
+        height: 15vh;
+        width: 15vw;
+    }
+
+    .iframe__ubicacion {
+        width: 25vw;
+        height: 20vh;
+    }
+
+    /* Galeria******* */
+    .main__contenedor {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .imagen__servicio--galeria {
+        width: 50vw;
+    }
+
+    .div__carousel {
+        width: 45vw;
+        height: 60vh;
+    }
+
+    .div__carousel-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main__contenedor--galeria {
+        align-content: center;
+    }
+
+    /*Servicios ***/
+    .imagen__servicio {
+        height: 30vh;
+        width: 25vw;
+        align-self: center;
+        margin-top: 3%;
+    }
+
+    .div_card {
+        align-self: center;
+        width: 23rem;
+        height: 22rem;
+    }
+
+    .main__section--servicios {
+        margin-top: 6%;
+    }
+
+    .div__container {
+        gap: 5rem;
+    }
 }
-.boton{
+
+/* @extend  */
+.boton {
     background-color: red;
     text-align: center;
     color: beige;
@@ -196,41 +202,64 @@
     height: 2rem;
     border-radius: 2px;
     border: 1px solid black;
-    &:hover{
-    border-radius: 2px;
-    border: 1px solid black;
-    filter: opacity(75%);
+
+    &:hover {
+        border-radius: 2px;
+        border: 1px solid black;
+        filter: opacity(75%);
     }
 }
 
-.boton2{
+.boton2 {
     @extend .boton;
     background-color: rgb(9, 255, 0);
     color: beige;
 }
-.boton3{
+
+.boton3 {
     @extend .boton;
     background-color: rgb(17, 0, 255);
     color: beige;
 }
-.boton4{
+
+.boton4 {
     @extend .boton;
-    background-color: rgb(229, 255, 0);
+    background-color: rgb(255, 0, 128);
     color: beige;
 }
-.div2__servi{
+
+/*FIN @extend   */
+
+
+.div2__servi {
     background-color: grey;
     border-radius: 2rem;
     border: 0.1rem solid #920c0c;
     margin-bottom: 2rem;
-   
+
 }
-.imagen__smi{
+
+.imagen__smi {
     width: 35rem;
     height: 15rem;
+    border-radius: 1rem;
+    filter: opacity(95%);
+
+    &:hover {
+        filter: blur(0.1rem);
+    }
 }
-.div__imagen{
+
+.div__imagen {
     display: flex;
     justify-content: center;
     margin: 3rem 0;
+}
+
+.main__parrafo--serv {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #212122;
+    margin: 1rem;
 }

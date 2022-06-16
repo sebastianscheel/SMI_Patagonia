@@ -1,3 +1,4 @@
+/*      MIXIN     */
 .titulo__serv1 {
   font-size: 1.4rem;
   color: black;
@@ -6,11 +7,13 @@
 
 .titulo__serv2 {
   font-size: 1.3rem;
-  color: red;
+  color: #7e0303;
   font-weight: 100;
   text-align: start;
   margin: 1rem;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  font-style: italic;
+  text-decoration: underline; }
 
 /* CSS RESET******************************** */
 * {
@@ -122,6 +125,11 @@ body {
   width: 35vw;
   align-self: center;
   margin-top: 3%; }
+  .imagen__servicio:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #f4f4f8;
+    -webkit-box-shadow: 0px 0px 10px 10px #f4f4f8; }
 
 .div_card {
   align-self: center;
@@ -291,7 +299,9 @@ body {
     width: 50vw; }
   .main__contenedor--serv {
     flex-direction: row;
-    align-items: flex-start; } }
+    align-items: flex-start; }
+  .div__container {
+    gap: 1rem; } }
 
 /* *******************MEDIA QUERIES******************* */
 /* Desktop a partir de 768************************************************** */
@@ -412,6 +422,7 @@ body {
   .div__container {
     gap: 5rem; } }
 
+/* @extend  */
 .boton, .boton2, .boton3, .boton4 {
   background-color: red;
   text-align: center;
@@ -434,9 +445,10 @@ body {
   color: beige; }
 
 .boton4 {
-  background-color: #e5ff00;
+  background-color: #ff0080;
   color: beige; }
 
+/*FIN @extend   */
 .div2__servi {
   background-color: grey;
   border-radius: 2rem;
@@ -445,12 +457,23 @@ body {
 
 .imagen__smi {
   width: 35rem;
-  height: 15rem; }
+  height: 15rem;
+  border-radius: 1rem;
+  filter: opacity(95%); }
+  .imagen__smi:hover {
+    filter: blur(0.1rem); }
 
 .div__imagen {
   display: flex;
   justify-content: center;
   margin: 3rem 0; }
+
+.main__parrafo--serv {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212122;
+  margin: 1rem; }
 
 /*Animaciones*/
 /*1*/
