@@ -5,10 +5,10 @@
     text-align: $aling;  
 }
 .titulo__serv1{
-    @include fontZise(1.3rem,black,250,center);
+    @include fontZise(1.4rem,black,250,center);
 }
 .titulo__serv2{
-    @include fontZise(1.7rem,red,100,start);
+    @include fontZise(1.3rem,red,100,start);
     margin: 1rem;
     padding-left: 3rem;
 }

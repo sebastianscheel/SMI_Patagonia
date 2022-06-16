@@ -1,11 +1,11 @@
 .titulo__serv1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
   font-weight: 250;
   text-align: center; }
 
 .titulo__serv2 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: red;
   font-weight: 100;
   text-align: start;
@@ -139,37 +139,6 @@ body {
 
 .article__servicio {
   align-items: center; }
-
-.boton, .boton2, .boton3, .boton4 {
-  background-color: red;
-  text-align: center;
-  color: beige;
-  width: 6rem;
-  height: 2rem;
-  border-radius: 2px;
-  border: 1px solid black; }
-  .boton:hover, .boton2:hover, .boton3:hover, .boton4:hover {
-    border-radius: 2px;
-    border: 1px solid black;
-    filter: opacity(75%); }
-
-.boton2 {
-  background-color: #09ff00;
-  color: beige; }
-
-.boton3 {
-  background-color: #1100ff;
-  color: beige; }
-
-.boton4 {
-  background-color: #e5ff00;
-  color: beige; }
-
-.div2__servi {
-  background-color: grey;
-  border-radius: 2rem;
-  border: 0.1rem solid #920c0c;
-  margin-bottom: 2rem; }
 
 /* Productos*/
 .tabla__encabezado {
@@ -435,11 +404,53 @@ body {
     align-self: center;
     margin-top: 3%; }
   .div_card {
-    align-self: center; }
+    align-self: center;
+    width: 23rem;
+    height: 22rem; }
   .main__section--servicios {
     margin-top: 6%; }
   .div__container {
     gap: 5rem; } }
+
+.boton, .boton2, .boton3, .boton4 {
+  background-color: red;
+  text-align: center;
+  color: beige;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 2px;
+  border: 1px solid black; }
+  .boton:hover, .boton2:hover, .boton3:hover, .boton4:hover {
+    border-radius: 2px;
+    border: 1px solid black;
+    filter: opacity(75%); }
+
+.boton2 {
+  background-color: #09ff00;
+  color: beige; }
+
+.boton3 {
+  background-color: #1100ff;
+  color: beige; }
+
+.boton4 {
+  background-color: #e5ff00;
+  color: beige; }
+
+.div2__servi {
+  background-color: grey;
+  border-radius: 2rem;
+  border: 0.1rem solid #920c0c;
+  margin-bottom: 2rem; }
+
+.imagen__smi {
+  width: 35rem;
+  height: 15rem; }
+
+.div__imagen {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0; }
 
 /*Animaciones*/
 /*1*/

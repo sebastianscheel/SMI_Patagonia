@@ -177,6 +177,8 @@
     
         .div_card {
             align-self: center;
+            width: 23rem;
+            height: 22rem;
         }
     
         .main__section--servicios {
@@ -185,4 +187,50 @@
         .div__container{
             gap: 5rem;
         }
+}
+.boton{
+    background-color: red;
+    text-align: center;
+    color: beige;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2px;
+    border: 1px solid black;
+    &:hover{
+    border-radius: 2px;
+    border: 1px solid black;
+    filter: opacity(75%);
+    }
+}
+
+.boton2{
+    @extend .boton;
+    background-color: rgb(9, 255, 0);
+    color: beige;
+}
+.boton3{
+    @extend .boton;
+    background-color: rgb(17, 0, 255);
+    color: beige;
+}
+.boton4{
+    @extend .boton;
+    background-color: rgb(229, 255, 0);
+    color: beige;
+}
+.div2__servi{
+    background-color: grey;
+    border-radius: 2rem;
+    border: 0.1rem solid #920c0c;
+    margin-bottom: 2rem;
+   
+}
+.imagen__smi{
+    width: 35rem;
+    height: 15rem;
+}
+.div__imagen{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
 }
