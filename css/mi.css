@@ -15,6 +15,18 @@
   font-style: italic;
   text-decoration: underline; }
 
+.colorWhatsapp {
+  color: #08b908; }
+
+.colorFacebook {
+  color: blue; }
+
+.colorInstagram {
+  color: #f04410; }
+
+.colorCorreo {
+  color: #f8a50a; }
+
 /* CSS RESET******************************** */
 * {
   margin: 0;

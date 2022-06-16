@@ -1,0 +1,19 @@
+$nombreRedes: (
+    "whatsapp": rgb(8, 185, 8),
+    "facebook": blue,
+    "instagram": rgb(240, 68, 16),
+    "correo": rgb(248, 165, 10),
+);
+
+.colorWhatsapp {
+    color: map-get($nombreRedes,whatsapp);
+}
+.colorFacebook {
+    color: map-get($nombreRedes,facebook);
+}
+.colorInstagram {
+    color: map-get($nombreRedes,instagram);
+}
+.colorCorreo {
+    color: map-get($nombreRedes,correo);
+}
