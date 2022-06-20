@@ -191,75 +191,9 @@
     .div__container {
         gap: 5rem;
     }
-}
-
-/* @extend  */
-.boton {
-    background-color: red;
-    text-align: center;
-    color: beige;
-    width: 6rem;
-    height: 2rem;
-    border-radius: 2px;
-    border: 1px solid black;
-
-    &:hover {
-        border-radius: 2px;
-        border: 1px solid black;
-        filter: opacity(75%);
+    .imagen__smi {
+        width: 30rem;
+        height: 15rem;
     }
 }
 
-.boton2 {
-    @extend .boton;
-    background-color: rgb(9, 255, 0);
-    color: beige;
-}
-
-.boton3 {
-    @extend .boton;
-    background-color: rgb(17, 0, 255);
-    color: beige;
-}
-
-.boton4 {
-    @extend .boton;
-    background-color: rgb(255, 0, 128);
-    color: beige;
-}
-
-/*FIN @extend   */
-
-
-.div2__servi {
-    background-color: grey;
-    border-radius: 2rem;
-    border: 0.1rem solid #920c0c;
-    margin-bottom: 2rem;
-
-}
-
-.imagen__smi {
-    width: 15rem;
-    height: 7rem;
-    border-radius: 1rem;
-    filter: opacity(95%);
-
-    &:hover {
-        filter: blur(0.1rem);
-    }
-}
-
-.div__imagen {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
-}
-
-.main__parrafo--serv {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #212122;
-    margin: 1rem;
-}
