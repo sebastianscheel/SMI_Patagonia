@@ -139,8 +139,8 @@ body {
 
 /*servicios************************ */
 .imagen__servicio {
-  height: 15vh;
-  width: 35vw;
+  height: 25vh;
+  width: 30vw;
   align-self: center;
   margin-top: 3%; }
   .imagen__servicio:hover {
@@ -153,7 +153,7 @@ body {
   align-self: center;
   margin-top: 3%;
   background-color: #bbbbbb;
-  width: 25rem; }
+  width: 20rem; }
 
 .card-body {
   display: flex;
@@ -313,9 +313,6 @@ body {
     width: 18vw;
     height: 20vh; }
   /*Servicios*/
-  .imagen__servicio {
-    height: 30vh;
-    width: 50vw; }
   .main__contenedor--serv {
     flex-direction: row;
     align-items: flex-start; }
