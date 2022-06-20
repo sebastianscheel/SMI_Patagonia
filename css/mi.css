@@ -152,7 +152,8 @@ body {
 .div_card {
   align-self: center;
   margin-top: 3%;
-  background-color: #bbbbbb; }
+  background-color: #bbbbbb;
+  width: 25rem; }
 
 .card-body {
   display: flex;
@@ -474,8 +475,8 @@ body {
   margin-bottom: 2rem; }
 
 .imagen__smi {
-  width: 35rem;
-  height: 15rem;
+  width: 20rem;
+  height: 10rem;
   border-radius: 1rem;
   filter: opacity(95%); }
   .imagen__smi:hover {
