@@ -26,11 +26,13 @@
         background: $colorTitulo;
         border-radius: 35px 0px 35px 0px;
         border: 0.1rem solid #0d0d0e;
+        overflow:hidden;
     }
     &__parrafo {
         text-align: center;
         font-size: 1.2rem;
-        color:  $colorBg;        
+        color:  $colorBg; 
+        overflow: hidden;       
     }
     &__iframe {
         height: 25vh;

@@ -102,11 +102,13 @@ body {
     width: 95%;
     background: #7e0303;
     border-radius: 35px 0px 35px 0px;
-    border: 0.1rem solid #0d0d0e; }
+    border: 0.1rem solid #0d0d0e;
+    overflow: hidden; }
   .main__parrafo {
     text-align: center;
     font-size: 1.2rem;
-    color: #f4f4f8; }
+    color: #f4f4f8;
+    overflow: hidden; }
   .main__iframe {
     height: 25vh;
     width: 67vw;
@@ -140,7 +142,6 @@ body {
 /*servicios************************ */
 .imagen__servicio {
   height: 25vh;
-  width: 30vw;
   align-self: center;
   margin-top: 3%; }
   .imagen__servicio:hover {
@@ -159,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .card-body--2 {
   margin-top: 3rem; }
@@ -478,7 +479,6 @@ body {
     align-content: center; }
   /*Servicios ***/
   .imagen__servicio {
-    height: 30vh;
     width: 25vw;
     align-self: center;
     margin-top: 3%; }
@@ -515,7 +515,7 @@ body {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; }
+    width: 100%; }
   to {
     margin-left: 0%;
     width: 100%; } }
