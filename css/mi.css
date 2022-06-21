@@ -215,7 +215,7 @@ body {
   margin: 3rem 0; }
 
 .main__parrafo--serv {
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   font-weight: bold;
   color: #212122;
@@ -245,6 +245,14 @@ body {
 .div__carousel-img {
   height: 100%;
   width: 100%; }
+
+.div__galeria--h2 {
+  padding-top: 2rem;
+  font-style: italic;
+  color: #7e0303;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none; }
 
 /* Contacto********************* */
 .main__contenedor--form,
