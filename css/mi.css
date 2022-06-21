@@ -226,9 +226,6 @@ body {
   max-width: 500px;
   margin: 2rem auto; }
 
-.div__producto {
-  width: 80rem; }
-
 /* Galeria*/
 .main__article {
   margin: 3%; }
@@ -486,7 +483,9 @@ body {
     gap: 5rem; }
   .imagen__smi {
     width: 30rem;
-    height: 15rem; } }
+    height: 15rem; }
+  .div__producto {
+    width: 50rem; } }
 
 /*Animaciones*/
 /*1*/
