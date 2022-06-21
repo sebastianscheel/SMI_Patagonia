@@ -248,8 +248,8 @@ body {
   align-items: center; }
 
 .div__carousel {
-  width: 25rem;
-  height: 20rem; }
+  width: 15rem;
+  height: 10rem; }
 
 .div__carousel-img {
   height: 100%;
@@ -366,6 +366,9 @@ body {
   .imagen__servicio--galeria {
     width: 18vw;
     height: 20vh; }
+  .div__carousel {
+    width: 45vw;
+    height: 30vh; }
   /*Servicios*/
   .main__contenedor--serv {
     flex-direction: row;
@@ -470,7 +473,7 @@ body {
   .imagen__servicio--galeria {
     width: 50vw; }
   .div__carousel {
-    width: 45vw;
+    width: 55vw;
     height: 60vh; }
   .div__carousel-img {
     height: 100%;
