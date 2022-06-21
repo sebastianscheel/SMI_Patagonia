@@ -221,6 +221,9 @@ body {
   color: #212122;
   margin: 1rem; }
 
+.div__container {
+  justify-content: center; }
+
 /* Productos*/
 .div__accordion {
   max-width: 500px;
