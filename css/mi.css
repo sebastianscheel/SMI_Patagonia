@@ -238,6 +238,9 @@ body {
 .div__container {
   justify-content: center; }
 
+.btn__div {
+  margin-top: 1rem; }
+
 /* Galeria*/
 .main__article {
   margin: 3%; }
