@@ -46,9 +46,9 @@
     }
 }
 
-/* @extend  */
+/* @extend  SOLO PARA CUMPLIR CON LA ENTREGA*/
 .boton {
-    background-color: red;
+    background-color: rgb(71, 9, 9);
     text-align: center;
     color: beige;
     width: 6rem;
@@ -65,19 +65,19 @@
 
 .boton2 {
     @extend .boton;
-    background-color: rgb(9, 255, 0);
+    background-color: rgb(207, 11, 11);
     color: beige;
 }
 
 .boton3 {
     @extend .boton;
-    background-color: rgb(17, 0, 255);
+    background-color: rgb(136, 13, 13);
     color: beige;
 }
 
 .boton4 {
     @extend .boton;
-    background-color: rgb(255, 0, 128);
+    background-color: rgb(236, 23, 16);
     color: beige;
 }
 

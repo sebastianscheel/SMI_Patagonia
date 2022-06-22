@@ -176,9 +176,9 @@ body {
   .imagen__smi:hover {
     filter: blur(0.1rem); }
 
-/* @extend  */
+/* @extend  SOLO PARA CUMPLIR CON LA ENTREGA*/
 .boton, .boton2, .boton3, .boton4 {
-  background-color: red;
+  background-color: #470909;
   text-align: center;
   color: beige;
   width: 6rem;
@@ -191,15 +191,15 @@ body {
     filter: opacity(75%); }
 
 .boton2 {
-  background-color: #09ff00;
+  background-color: #cf0b0b;
   color: beige; }
 
 .boton3 {
-  background-color: #1100ff;
+  background-color: #880d0d;
   color: beige; }
 
 .boton4 {
-  background-color: #ff0080;
+  background-color: #ec1710;
   color: beige; }
 
 /*FIN @extend   */
